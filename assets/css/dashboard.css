@@ -1,0 +1,21 @@
+/* DASHBOARD */
+
+.content [class*="col-"]{
+  margin-bottom:25px;
+}
+.content [class*="col-"]:last-child{
+  margin-bottom:0;
+}
+.content .chart{
+  border:2px solid #ccc;
+  border-radius:6px;
+  text-align:center;
+}
+.content canvas{
+  margin-top:15px;
+  max-width:90%;
+}
+.content .chart h2{
+  padding-top:15px;
+  border-top:1px solid #ccc;
+}

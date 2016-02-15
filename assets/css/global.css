@@ -1,0 +1,99 @@
+html, body{
+  height:100%;
+}
+body{
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
+}
+.logout{
+  padding:8px 20px;
+  background-color:rgb(0,127,255);
+  border-color:rgb(0,127,255);
+}
+.logout:hover, .logout:active, .logout:focus{
+  background-color:rgba(0,127,255,0.8);
+  border-color:rgba(0,127,255,0.8);
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight:300;
+}
+
+/* HEADER */
+
+header{
+  background-color:rgb(248,248,248);
+  height:75px;
+  line-height:75px;
+  border-bottom:2px solid #ccc;
+}
+header .logo{
+  float:left;
+}
+header .text{
+  float:left;
+  margin-left:15px;
+  font-size:22px;
+}
+header nav{
+  float:right;
+}
+header nav .glyphicon-menu-hamburger{
+  font-size:18px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  padding:0;
+  border-right:2px solid #ccc;
+  background:rgb(248,248,248);
+  height:100%;
+}
+.sidebar li .glyphicon{
+  margin-right:5px;
+}
+.sidebar .input-group{
+  padding:15px;
+  border-bottom:2px solid #ccc;
+}
+
+/* NAV Overriding Pill Nav */
+
+.sidebar .nav{
+  color:#333;
+  margin-top:0;
+}
+.nav-stacked>li+li{
+  margin-top:0;
+}
+.sidebar .nav li a{
+  border-radius:0;
+  border-bottom:1px solid #ccc;
+  padding-top:15px;
+  padding-bottom:15px;
+  color:#333;
+}
+.sidebar .nav li.active a{
+  background:rgb(238,238,238);
+  color:#333;
+}
+
+/* CONTENT */
+
+.content{
+  padding:25px;
+}
+h2.page{
+  margin-top:0;
+}
+h2.page sup{
+  font-size:13px;
+  color:#ccc;
+}
+
+/* xs hide sidebar fix */
+@media screen and (max-width:768px){
+  .sidebar{
+    display:none;
+  }
+}
