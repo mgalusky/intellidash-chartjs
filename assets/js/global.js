@@ -8,7 +8,7 @@ $(document).ready(function(){
       $('.sidebar').height('auto');
 
       // We want to return from this function so the remainder of code below doesn't get executed
-      return; //Delete this comment: If you don't specify something to return, 'undefined' is returned. In this case, we're only using this function for the side effects it produces, not what it returns! That means what we return doesn't matter :)
+      return;
     }
 
     if($('main').height() > $(window).height()){
@@ -27,6 +27,7 @@ $(document).ready(function(){
   // Whenever the window resizes, we should fix the sidebar
   $(window).on('resize', fixSidebar);
 
-  // Delete this comment: This is where you should handle basic requirement #2 :)
-
+  $('.glyphicon-menu-hamburger').on('click', function(){
+    $('.nav').slideToggle();
+  });
 });
